@@ -1,0 +1,19 @@
+--- Library Client Log Started: 2025-06-28 08:17:07.529546 ---
+[2025-06-28 08:17:07.530780] [MainClient] Memulai 4 pengecekan status buku secara concurrent.
+[2025-06-28 08:17:07.533232] [Worker-0] Memulai pekerjaan untuk ISBN: 978-3-16-148410-0
+[2025-06-28 08:17:07.533232] [Worker-1] Memulai pekerjaan untuk ISBN: 978-0-26-110221-7
+[2025-06-28 08:17:07.535684] [Worker-1] Mengirim permintaan ke BASE_API_URL?name=978-0-26-110221-7
+[2025-06-28 08:17:07.534255] [Worker-2] Memulai pekerjaan untuk ISBN: 999-9-99-999999-9
+[2025-06-28 08:17:07.534255] [Worker-3] Memulai pekerjaan untuk ISBN: 978-1-40-885565-2
+[2025-06-28 08:17:07.534255] [Worker-0] Mengirim permintaan ke BASE_API_URL?name=978-3-16-148410-0
+[2025-06-28 08:17:07.537683] [Worker-2] Mengirim permintaan ke BASE_API_URL?name=999-9-99-999999-9
+[2025-06-28 08:17:07.538686] [Worker-1] Error permintaan umum: Invalid URL 'BASE_API_URL?name=978-0-26-110221-7': No scheme supplied. Perhaps you meant https://BASE_API_URL?name=978-0-26-110221-7?
+[2025-06-28 08:17:07.538686] [Worker-3] Mengirim permintaan ke BASE_API_URL?name=978-1-40-885565-2
+[2025-06-28 08:17:07.540710] [Worker-0] Error permintaan umum: Invalid URL 'BASE_API_URL?name=978-3-16-148410-0': No scheme supplied. Perhaps you meant https://BASE_API_URL?name=978-3-16-148410-0?
+[2025-06-28 08:17:07.541686] [Worker-2] Error permintaan umum: Invalid URL 'BASE_API_URL?name=999-9-99-999999-9': No scheme supplied. Perhaps you meant https://BASE_API_URL?name=999-9-99-999999-9?
+[2025-06-28 08:17:07.542692] [Worker-1] Selesai pekerjaan untuk ISBN: 978-0-26-110221-7
+[2025-06-28 08:17:07.544710] [Worker-3] Error permintaan umum: Invalid URL 'BASE_API_URL?name=978-1-40-885565-2': No scheme supplied. Perhaps you meant https://BASE_API_URL?name=978-1-40-885565-2?
+[2025-06-28 08:17:07.549710] [Worker-3] Selesai pekerjaan untuk ISBN: 978-1-40-885565-2
+[2025-06-28 08:17:07.546709] [Worker-2] Selesai pekerjaan untuk ISBN: 999-9-99-999999-9
+[2025-06-28 08:17:07.545711] [Worker-0] Selesai pekerjaan untuk ISBN: 978-3-16-148410-0
+[2025-06-28 08:17:07.554711] [MainClient] Semua pengecekan buku selesai dalam 0.02 detik.
